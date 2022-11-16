@@ -1,3 +1,4 @@
+import "./hero.scss"
 export default function Hero(){
-    return ( <div> Hero component works </div> )
+    return ( <div className="caurosel"> Hero component works </div> )
 }
