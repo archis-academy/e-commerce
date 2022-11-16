@@ -6,6 +6,13 @@ export default function Hero(){
 
     const [backgroundImg , setbackgroundImg]= useState("/assets/CauroselSlider1.jpg");
 
+    function prevImg(){
+       return setbackgroundImg("/assets/CauroselSlider1.jpg")
+    }
+    function nextImg(){
+      return  setbackgroundImg("/assets/CauroselSlider2.jpg")
+    }
+
     return ( 
     <div className="caurosel" style={{backgroundImage : `url(${backgroundImg})`}}>
         <div className="bottomBar">
@@ -14,8 +21,8 @@ export default function Hero(){
                 <span className="scrollLine"></span>
             </div>
             <div className="navigation">
-                <button><img src="/assets/CauroselNavigationButtonLeft.png" alt="" /></button>
-                <button><img src="/assets/CauroselNavigationButtonRight.png" alt=""/></button>
+                <button onClick={prevImg}><img src="/assets/CauroselNavigationButtonLeft.png" alt="" /></button>
+                <button onClick={nextImg}><img src="/assets/CauroselNavigationButtonRight.png" alt=""/></button>
             </div>
         </div>
     </div> )
