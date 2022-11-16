@@ -1,0 +1,25 @@
+.topBar{
+    display: flex;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 10px 60px;
+    flex-direction: row;
+    align-items: center;
+    background: #0D0D0D;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+
+    .text{ font-weight: 600; }
+
+    .language{
+        font-weight: 500;
+
+        button{
+            border: none;
+            background: none;
+            color: #FFFFFF;
+        }
+    }
+
+    @media screen and (max-width:425px) { padding: 10px; }
+}
