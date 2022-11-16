@@ -1,0 +1,51 @@
+.caurosel{
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 650px 0px 40px 0px;
+    .bottomBar{
+        display: flex;
+        color: #fff;
+        height: min-content;
+        justify-content: space-between;
+        .scroll{
+            width: min-content;
+            display: flex;
+            flex-direction: column;
+            gap:36px;
+            margin-left: calc(90% / 2 );
+            .scrollLine{
+                border: 2px solid #FFFFFF;
+                transform:rotate(90deg);
+            }
+            .scrollText{
+                transform:rotate(90deg);
+                font-size: 13px;
+                font-family: 'Oswald';
+            }
+        }
+
+        .navigation{
+            display: flex;
+            align-items: center;
+            margin-right: 10%;
+            gap: 24px;
+            button{
+                border: none;
+                background: none;
+                color: #fff;
+                font-size: 32px;
+            }
+
+        }
+    }
+
+    @media screen and (max-width:992px) { padding: 450px 0px 40px 0px;}
+    @media screen and (max-width:576px) { 
+        padding: 250px 0px 40px 0px;
+        .navigation { 
+            margin-right: 5% !important;
+            gap: 12px !important;
+        }
+    }
+
+}
